@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Timer from './Timer';
 
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,13 @@ function App() {
         </header>
       </div>
       <Timer/>
+      <hr
+        style={{
+            color: '#eebbc3',
+            backgroundColor: '#eebbc3',
+            height: 5
+        }}
+      />
       <div className = "App-container">
         <div className = "App-timeline">
           <div className = "App-timeline-div">
