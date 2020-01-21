@@ -1,22 +1,88 @@
 .App {
   text-align: center;
+  background-color: #0f0e17;
+  color: white;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+.App-text {
+  font-size: 1.2rem;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #eebbc3;
+}
+
+.App-p {
+  color: #b8c1ec;
+}
+
+.App-container {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+  background-color: #0f0e17;
+}
+
+
+.App-timeline {
+  display: flex;
+  flex-wrap : wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 4rem 0 ;
+}
+
+.App-timeline-div {
+  margin: 0.5rem;
+  width: calc(25% - 1rem);
+}
+
+.p-footer {
+  text-align: center;
+}
+
+.App-timeline-div-savings {
+  background: #b8c1ec;
+  margin: 0.5rem;
+  width: calc(25% - 1rem);
+}
+
+/* Tablet Styles */
+/* @media only screen and (min-width: 401px) and (max-width: 960px) {
+  .App-timeline-div {
+    margin: 0.5rem;
+    width: calc(25% - 1rem);
+  }
+} */
+
+@media only screen and (min-width: 961px) {
+  .App-timeline-div {
+    margin: 0.5rem;
+    width: calc(25% - 1rem);
+  }
+  .App-timeline-div-savings {
+    width: calc(25% - 1rem);
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .App-timeline-div {
+    margin: 0.5rem;
+    width: calc(50% - 1rem);
+  }
+  .App-timeline-div-savings {
+    width: calc(50% - 1rem);
+  }
 }
