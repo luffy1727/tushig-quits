@@ -67,7 +67,7 @@ function App() {
           </div>
         </div>
       </div>
-      <p className="footer-p">
+      <p className="p-footer">
             <small
               ><a
                 href="https://www.cdc.gov/tobacco/data_statistics/sgr/2004/posters/20mins/index.htm"
@@ -79,8 +79,7 @@ function App() {
                 >GitHub</a
               ></small
             >
-          </p>
-      
+        </p>
     </div>
   );
 }
