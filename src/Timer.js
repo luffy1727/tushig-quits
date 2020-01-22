@@ -16,7 +16,7 @@ class Timer extends Component {
     init (secs) {
         this.setState({
             seconds: secs,
-            minutes : Math.floor(secs % (60 * 60) / 60),
+            minutes : Math.floor(secs / 60),
             hours : Math.floor(secs / (60 * 60)),
             days : Math.floor(Math.floor(secs / (60 * 60)) / 24),
             years : Math.floor(Math.floor(Math.floor(secs / (60 * 60)) / 24) / 365),
@@ -26,13 +26,14 @@ class Timer extends Component {
     }
 
     secondsToTime(){
+        console.log(this.state.seconds);
         this.setState(prevState => ({
             seconds: prevState.seconds + 1,
             hours : Math.floor(this.state.seconds / (60 * 60)),
             days : Math.floor(this.state.hours / 24),
             years : Math.floor(this.state.days / 365),
             months :  Math.floor(this.state.days / 30),
-            minutes : Math.floor(this.state.seconds % (60 * 60) / 60),
+            minutes : Math.floor(this.state.seconds / 60),
             savings :  this.state.days * data.dailyCost
         }));
       }
