@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/tushig-quits/static/css/main.d3097fb6.chunk.css",
+    "main.js": "/tushig-quits/static/js/main.a3d0cbe2.chunk.js",
+    "main.js.map": "/tushig-quits/static/js/main.a3d0cbe2.chunk.js.map",
+    "runtime-main.js": "/tushig-quits/static/js/runtime-main.23d5d83c.js",
+    "runtime-main.js.map": "/tushig-quits/static/js/runtime-main.23d5d83c.js.map",
+    "static/js/2.06818918.chunk.js": "/tushig-quits/static/js/2.06818918.chunk.js",
+    "static/js/2.06818918.chunk.js.map": "/tushig-quits/static/js/2.06818918.chunk.js.map",
+    "index.html": "/tushig-quits/index.html",
+    "precache-manifest.5322179815c46d14567d8d4aa98f573b.js": "/tushig-quits/precache-manifest.5322179815c46d14567d8d4aa98f573b.js",
+    "service-worker.js": "/tushig-quits/service-worker.js",
+    "static/css/main.d3097fb6.chunk.css.map": "/tushig-quits/static/css/main.d3097fb6.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23d5d83c.js",
+    "static/js/2.06818918.chunk.js",
+    "static/css/main.d3097fb6.chunk.css",
+    "static/js/main.a3d0cbe2.chunk.js"
+  ]
+}
