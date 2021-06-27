@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-const data = {
-    quitDay: 1624774763, //  new Date(2019, 05, 16)
+const data = 
+{
+    quitDay: 1624775184000, //  new Date(2021, 06, 27) i f' ed up 
     dailyCost: 2500, // cost of a box of Parliament in Mongolia counted as in 0.5 pack a day
+    previousSavings: 1930000
   };
 
 class Timer extends Component {
@@ -26,7 +28,6 @@ class Timer extends Component {
     }
 
     secondsToTime(){
-        console.log(this.state.seconds);
         this.setState(prevState => ({
             seconds: prevState.seconds + 1,
             hours : Math.floor(this.state.seconds / (60 * 60)),
@@ -51,37 +52,33 @@ class Timer extends Component {
           <div className = "App-container">
             <div className = "App-timeline">
                 <div className = "App-timeline-div">
-                    <h1>{this.state.seconds}</h1>
+                    <h1>{this.state.time % 60}</h1>
                     <p>Секунд</p>
                 </div>
                 <div className = "App-timeline-div">
-                    <h1>{this.state.minutes}</h1>
+                    <h1>{this.state.minutes % 60}</h1>
                     <p>Минут</p>
                 </div>
                 <div className = "App-timeline-div">
-                    <h1>{this.state.hours}</h1>
+                    <h1>{this.state.hours % 24}</h1>
                     <p>Цаг</p>
                 </div>
                 <div className = "App-timeline-div">
-                    <h1>{this.state.days}</h1>
+                    <h1>{this.state.days % 30}</h1>
                     <p>Өдөр</p>
                 </div>
             </div>
             <div className = "App-timeline">
                 <div className = "App-timeline-div">
-                    <h1>{this.state.months}</h1>
+                    <h1>{this.state.months % 12}</h1>
                     <p>Сар</p>
                 </div>
                 <div className = "App-timeline-div">
                     <h1>{this.state.years}</h1>
                     <p>Жил</p>
                 </div>
-                <div className = "App-timeline-div">
-                    <h1>1 гайхалтай охин</h1>
-                    <p>Амний муухай үнэрээс аврагдсан найз охин</p>
-                </div>
                 <div className = "App-timeline-div-savings">
-                    <h1>{this.state.savings}₮</h1>
+                    <h1>{this.state.savings + data.previousSavings}₮</h1>
                     <p>Хэмнэлт</p>
                 </div>
             </div>
