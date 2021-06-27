@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const data = {
-    quitDay: 1558035458000, //  new Date(2019, 05, 16)
+    quitDay: 1624774763, //  new Date(2019, 05, 16)
     dailyCost: 2500, // cost of a box of Parliament in Mongolia counted as in 0.5 pack a day
   };
 
