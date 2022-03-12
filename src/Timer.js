@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 const data = 
 {
-    quitDay: 1624775184000, //  new Date(2021, 06, 27) i f' ed up 
-    dailyCost: 2500, // cost of a box of Parliament in Mongolia counted as in 0.5 pack a day
-    previousSavings: 1930000
+    quitDay: 1646496066000, //  new Date(2022, 03, 05) i f' ed up again 
+    dailyCost: 6000, // cost of a Camel pack in Sweden counted as in 0.5 pack a day
+    previousSavings: 0 // previous savings before coming to sweden: 1930000
   };
 
 class Timer extends Component {
@@ -40,6 +40,7 @@ class Timer extends Component {
       }
 
     componentDidMount() {
+        console.log(new Date(data.quitDay).getTime());
         this.init(Math.floor((new Date(this.state.time).getTime() - new Date(data.quitDay).getTime())/1000));
         this.interval = setInterval(() => this.secondsToTime(), 1000);
     }

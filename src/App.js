@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import Timer from './Timer';
 
+const quitDay = new Date(1646496066000);
+
+console.log(quitDay);
 
 function App() {
   return (
@@ -17,7 +20,7 @@ function App() {
               href="https://luffy1727.github.io/my-portfolio/"
             >
                 Чинтүшиг Очирсүх
-            </a> тамхийг орхив. <br/> Энэхүү вэб нь түүнд ирээдүйд хэрэгтэй болох бөгөөд тэр тамхинаас гараад:
+            </a> {quitDay.getFullYear()}-{quitDay.getMonth()}-{quitDay.getDay()}нд тамхийг орхив. <br/> Энэ вэб түүнд ирээдүйд хэрэг болох бөгөөд тэр тамхинаас гараад:
           </p>
         </header>
       </div>
@@ -32,37 +35,37 @@ function App() {
       <div className = "App-container">
         <div className = "App-timeline">
           <div className = "App-timeline-div">
-            <h1>1 Цаг</h1>
+            <h1>1 цаг</h1>
             <p className = "App-text">Зүрхний цохилт багасна</p>
           </div>
           <div className = "App-timeline-div">
-            <h1>12 Цаг</h1>
+            <h1>12 цаг</h1>
             <p className = "App-text">Цусан дахь carbon monoxide түвшин хэвийн болно.</p>
           </div>
           <div className = "App-timeline-div">
-            <h1>14 Хоногоос 3 сар</h1>
+            <h1>14 xоног -> 3 сар</h1>
             <p className = "App-text">
               Зүрхний шигдээс тусах магадлал багасч, Уушигний үйл ажиллагаа хэвийн дээрдэж эхлэнэ.
             </p>
           </div>
           <div className = "App-timeline-div">
-            <h1>1 ээс 9 сар</h1>
+            <h1>1 -> 9 сар</h1>
             <p className = "App-text">Ханиалгах болон амьсгаа дутагдах нь багасна</p>
           </div>
           <div className = "App-timeline-div">
-            <h1>1 Жил</h1>
+            <h1>1 жил</h1>
             <p className = "App-text">Зүрхний титэм судасны өвчин тусах магадлал тамхичнаас 2 дахин бага болно</p>
           </div>
           <div className = "App-timeline-div">
-            <h1>5 Жил</h1>
+            <h1>5 жил</h1>
             <p className = "App-text">Саа өвчин тусах магадлал жирийн хүнийхтэй адил болно</p>
           </div>
           <div className = "App-timeline-div">
-            <h1>10 Жил</h1>
+            <h1>10 жил</h1>
             <p className = "App-text">Уушигний хорт хавдараар үхэх магадлал тамхичин хүнийхаас 2 дахин бага болсон байна</p>
           </div>
           <div className = "App-timeline-div">
-            <h1>15 Жил</h1>
+            <h1>15 жил</h1>
             <p className = "App-text">Зүрхний титэм судасны өвчин тусах магадлал жирийн хүнийхтай адил болсон байна</p>
           </div>
         </div>
